@@ -1,25 +1,23 @@
 import React from 'react'
 
 type OctocatComponentProps = {
-  id: string
-  title: string
+  number: number
+  name: string
+  image: string
+  link: string
+  author: string
 }
 export function OctocatComponent(props: OctocatComponentProps) {
   return (
     <article>
-      <a href="https://octodex.github.com//terracottocat/">
-        <img
-          src="https://octodex.github.com//images/Terracottocat_Single.png"
-          width="400"
-          height="400"
-          alt="Terracottocat"
-        />
+      <a href={props.link}>
+        <img src={props.image} width="400" height="400" />
       </a>
       <ul>
         <li>
-          #149:
+          {props.number}
           <a href="https://octodex.github.com//terracottocat/">
-            <strong>{props.title}</strong>
+            <strong>{props.name}</strong>
           </a>
         </li>
         <li>

@@ -1,19 +1,21 @@
 import React from 'react'
-import { OctocatComponent } from './components/Octocat'
+import { OctocatComponent } from './components/OctocatComponent'
 import octocats from './octocats.json'
+import './index.scss'
 
 export function App() {
   // console.log('Octo')
 
   const OctosFromData = octocats.map((octocat) => (
     <OctocatComponent
-      number={otocat.number}
-      name={otocat.name}
-      image={otocat.image}
-      link={otocat.link}
+      number={octocat.number}
+      name={octocat.string}
+      image={octocat.image}
+      link={octocat.link}
+      author={octocat.author}
     />
   ))
-  // console.log('OctoFromData')
+  console.log('OctoFromData')
   return (
     <div>
       <header>
@@ -59,7 +61,6 @@ export function App() {
         </nav>
       </header>
       <section>{OctosFromData}</section>
-      <OctocatComponent id="49" title="test" />
     </div>
   )
 }
