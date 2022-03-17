@@ -9,10 +9,10 @@ export function App() {
   const OctosFromData = octocats.map((octocat) => (
     <OctocatComponent
       number={octocat.number}
-      name={octocat.string}
+      name={octocat.name}
       image={octocat.image}
       link={octocat.link}
-      author={octocat.author}
+      author={(octocat.link, octocat.image)}
     />
   ))
   console.log('OctoFromData')

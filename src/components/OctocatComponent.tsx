@@ -5,7 +5,7 @@ type OctocatComponentProps = {
   name: string
   image: string
   link: string
-  author: string
+  author: object[{ link: string; image: string }]
 }
 export function OctocatComponent(props: OctocatComponentProps) {
   return (
@@ -16,12 +16,12 @@ export function OctocatComponent(props: OctocatComponentProps) {
       <ul>
         <li>
           {props.number}
-          <a href="https://octodex.github.com//terracottocat/">
+          <a href={props.link}>
             <strong>{props.name}</strong>
           </a>
         </li>
         <li>
-          <a href="https://github.com/chubbmo">
+          <a href={props.author}>
             <img
               src="https://github.com/chubbmo.png"
               width="24px"
