@@ -13,10 +13,15 @@ export function App() {
       name={octocat.name}
       image={octocat.image}
       link={octocat.link}
-      authors={octocat.authors.map((author) => (author.link, author.image))}
+      authorLink={octocat.authors[0].link}
+      authorImage={octocat.authors[0].image}
+      // {octocat.authors.map(({ link, image }) => author.image)}
+      // {octocat.authors.map((author) => {
+      //   [author.link, author.image]
+      // })}
     />
   ))
-  console.log('OctoFromData')
+  console.log('octocats', octocats)
   return (
     <div>
       <header>

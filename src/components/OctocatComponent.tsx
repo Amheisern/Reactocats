@@ -5,9 +5,13 @@ type OctocatComponentProps = {
   name: string
   image: string
   link: string
-  authors: { link: string; image: string }
+  // authors: string
+  authorLink: string
+  authorImage: string
+  // { link: string; image: string }
 }
 export function OctocatComponent(props: OctocatComponentProps) {
+  console.log(props)
   return (
     <article>
       <a href={props.link}>
@@ -21,9 +25,9 @@ export function OctocatComponent(props: OctocatComponentProps) {
           </a>
         </li>
         <li>
-          <a href={props.authors.link}>
+          <a href={props.authorLink}>
             <img
-              src={props.authors.image}
+              src={props.authorImage}
               width="24px"
               height="24px"
               alt="chubbmo"
