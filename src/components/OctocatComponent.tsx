@@ -11,7 +11,6 @@ type OctocatComponentProps = {
   // { link: string; image: string }
 }
 export function OctocatComponent(props: OctocatComponentProps) {
-  console.log(props)
   return (
     <article>
       <a href={props.link}>

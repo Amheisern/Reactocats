@@ -60,7 +60,7 @@ header nav ul li:not(:first-child) {
 }
 /* Header-------------------------------------- */
 
-main section {
+section {
   width: auto;
   max-width: 1600px;
   padding-right: 16px;
@@ -70,7 +70,7 @@ main section {
   flex-wrap: wrap;
 }
 
-main section article img {
+section article img {
   display: inline-flex;
   display: block;
   border: 1px #e1e4e8 solid;
@@ -81,7 +81,7 @@ main section article img {
   height: auto;
   max-width: 100%;
 }
-main section article ul {
+section article ul {
   display: flex;
   justify-content: flex-start;
 
@@ -95,8 +95,7 @@ main section article ul {
   list-style: none;
   margin-right: 4px;
 }
-
-main section article ul li a img {
+section article ul li a img {
   display: flex;
   justify-content: flex-end;
   border-style: none;
@@ -106,7 +105,7 @@ main section article ul li a img {
   float: right;
 }
 
-main section article ul li a {
+section article ul li a {
   font-family: 'Alliance No.1';
   font-feature-settings: 'ss02' on, 'ss01' on;
   font-size: 16px !important;
@@ -115,7 +114,7 @@ main section article ul li a {
   text-decoration: none;
 }
 
-main section article ul li:last-child {
+section article ul li:last-child {
   margin-left: auto;
 }
 a:link {
@@ -163,7 +162,7 @@ a:visited {
   header nav ul li:first-child {
     padding-right: 16px;
   }
-  main section article {
+  section article {
     padding-right: 16px !important;
     padding-left: 16px !important;
   }
